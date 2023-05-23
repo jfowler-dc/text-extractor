@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Extractor</title>
+        <link rel="stylesheet" type="text/css" href="./src/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Text Extractor</h1>
+        </header>
+
+        <div class="form-container">
+            <form id="extract-form">
+                <div class="form-group">
+                    <label for="url-input">Enter URL:</label>
+                    <input
+                        type="text"
+                        id="url-input"
+                        placeholder="https://www.example.com"
+                    />
+                </div>
+                <div class="form-group">
+                    <button type="submit">Extract Text</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" class="result-container" style="display: none;">
+            <h2>Extracted Text:</h2>
+            <pre id="extracted-text"></pre>
+            <p>----------------------------</p>
+            <h2>Summary:</h2>
+            <p id="summary"></p>
+        </div>
+
+        <div id="loader" class="loader"></div>
+
+        <script src="./src/script.js"></script>
+    </body>
+</html>
